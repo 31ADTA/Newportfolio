@@ -1,0 +1,4 @@
+/* index.css — minimal base only; all design tokens live in App.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; }
