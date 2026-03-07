@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import profile from "../public/Screenshot_2026-03-07-18-11-39-473_com.miui.gallery.png";
+import profile from "../Screenshot_2026-03-07-18-11-39-473_com.miui.gallery.png";
 
 const highlights = [
   { title: "Enterprise-ready development", desc: "Secure, scalable, and maintainable application architecture for long-term growth." },
