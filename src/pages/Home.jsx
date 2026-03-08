@@ -14,18 +14,6 @@ const services = [
   { title: "Performance Optimization", desc: "Improving speed, accessibility, and technical quality for better user retention." },
 ];
 
-const highlights = [
-  { title: "Enterprise-ready development", desc: "Secure, scalable, and maintainable application architecture for long-term growth." },
-  { title: "Business-first execution", desc: "Every feature is tied to measurable outcomes, user needs, and product KPIs." },
-  { title: "Clear communication", desc: "Transparent updates, defined milestones, and reliable delivery timelines." },
-];
-
-const services = [
-  { title: "Web Application Development", desc: "Building modern React-based applications with robust backend integrations." },
-  { title: "Data Analytics & Dashboards", desc: "Converting complex datasets into actionable dashboards and executive insights." },
-  { title: "Performance Optimization", desc: "Improving speed, accessibility, and technical quality for better user retention." },
-];
-
 function Home() {
   const revealRef = useRef([]);
 
@@ -90,8 +78,9 @@ function Home() {
             </div>
           </div>
 
-          <div className="home-right" ref={r}>
-            <div className="profile-frame reveal">
+          <div className="home-right">
+            {/* FIXED: The ref={r} is now on the correct element alongside the 'reveal' class */}
+            <div className="profile-frame reveal" ref={r}>
               <img src={profile} alt="Aditya Tale" className="profile-img" />
               <div className="profile-badge">
                 <span className="badge-dot"></span>
