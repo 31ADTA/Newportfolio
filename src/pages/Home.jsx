@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import profile from "../aseets/profile.jpeg;
+import profile from "../assets/profile.jpeg;
 
 const highlights = [
   { title: "Enterprise-ready development", desc: "Secure, scalable, and maintainable application architecture for long-term growth." },
