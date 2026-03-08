@@ -485,9 +485,10 @@ a { color: inherit; }
 
 .footer-links { display: flex; gap: 16px; }
 
+/* ======== THE FIX IS HERE ======== */
 .reveal {
-  opacity: 0;
-  transform: translateY(18px);
+  opacity: 1; /* FIXED: Was 0, changed to 1 to ensure it is always visible */
+  transform: translateY(0); /* FIXED: Removed the 18px shift so it sits correctly */
   transition: .45s ease;
 }
 
@@ -495,6 +496,7 @@ a { color: inherit; }
   opacity: 1;
   transform: translateY(0);
 }
+/* ================================= */
 
 @media (max-width: 1024px) {
   .projects-grid,
